@@ -4,7 +4,7 @@ source('forecast_code/R/generate_example_forecast.R')
 
 forecast_date <- Sys.Date()
 model_id <- 'churner'
-source_python('report_on_enhancing_cfsv2_temperature_forecasts.py')
+source_python('forecast.py')
 forecast <- as.data.frame(py$forecast)
 
 message('Writing forecast')
